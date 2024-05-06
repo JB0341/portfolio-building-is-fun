@@ -1,0 +1,38 @@
+:root {
+    --blue: #00a2ff; 
+    --font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+    padding: 1%;
+}
+
+h1 {
+    font-size: 300%;
+    font-family: var(--font);
+    padding: 10px 50px 10px 10px;
+    background-color: var(--blue);
+}
+
+h2 {
+    font-size: 200%;
+    font-family: var(--font);
+}
+
+nav ul li {
+    display: inline-flex;
+    font-size: 150%;
+    font-family: var(--font);
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+
+.container {
+
+}
