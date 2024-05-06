@@ -4,12 +4,17 @@
     
 }
 
+body {
+    margin: 0;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: gray;
-    padding: 1%;
+    padding: 2%;
+    padding-left: 0%;
 }
 
 h1 {
@@ -17,11 +22,27 @@ h1 {
     font-family: var(--font);
     padding: 10px 50px 10px 10px;
     background-color: var(--blue);
+    margin: 0;
 }
 
-h2 {
+.title {
     font-size: 200%;
     font-family: var(--font);
+    padding: 20px;
+    background-color: var(--blue);
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+
+.imagecontainer {
+    display: flex;
+    background-image: url("../images/USMC.jpg");
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-position: center;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 nav ul li {
@@ -34,5 +55,10 @@ nav ul li {
 
 
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 10px solid black;
+    flex-basis: 30%;
 
 }
