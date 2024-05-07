@@ -1,5 +1,6 @@
 :root {
-    --blue: #00a2ff; 
+    --blue: #00a2ff;
+    --charcoal: #4a4a4a;
     --font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
@@ -54,16 +55,60 @@ nav ul li {
 }
 
 
-.container {
+.article {
     display: flex;
     justify-content: space-around;
     flex-basis: 60%;
 
 }
 
-.container-heading {
+.article-heading {
+    font-family: var(--font);
+    font-size: 250%;
+    color: var(--charcoal);
     flex-basis: 30%;
     border-right: 5px solid;
     text-align: end;
     padding-right: 20px;
+}
+
+p {
+    font-family: var(--font);
+    color: var(--charcoal);
+    padding-left: 35px;
+}
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    /*flex-basis: 60%;*/
+}
+
+.work-heading {
+    font-family: var(--font);
+    font-size: 250%;
+    color: var(--charcoal);
+    flex-basis: 30%;
+    border-right: 5px solid;
+    text-align: end;
+    padding-right: 20px;
+    background-color: #00a2ff;
+}
+
+.box {
+    display: flex;
+    background-image: url("../images/BBN.jpg");
+    flex-wrap: wrap;
+    flex-basis: 60%;
+    background-position: center;
+    height: 200px;
+    background-size: 300px;
+    background-repeat: no-repeat;
+
+}
+h4 {
+    font-family: var(--font);
+    color: var(--blue);
+    font-size: 150%;
 }
