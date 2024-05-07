@@ -34,7 +34,7 @@ h1 {
     align-content: flex-end;
 }
 
-.imagecontainer {
+.image-container {
     display: flex;
     background-image: url("../images/USMC.jpg");
     justify-content: flex-end;
@@ -56,9 +56,14 @@ nav ul li {
 
 .container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: 10px solid black;
-    flex-basis: 30%;
+    justify-content: space-around;
+    flex-basis: 60%;
 
+}
+
+.container-heading {
+    flex-basis: 30%;
+    border-right: 5px solid;
+    text-align: end;
+    padding-right: 20px;
 }
