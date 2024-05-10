@@ -55,25 +55,27 @@ nav ul li {
     color: var(--blue);
     text-decoration: underline;
 }
+a {
+    color: var(--blue);
+}
+
+nav li a:hover {
+    background-color: aliceblue;
+}
 
 
 .article {
     display: flex;
-    justify-content: space-around;
-    flex-basis: 60%;
-
+    justify-content: center;
 }
 
 .article-heading {
-    display: flex;
     font-family: var(--font);
     font-size: 250%;
     color: var(--charcoal);
     flex-basis: 30%;
     border-right: 5px solid;
-    text-align: end;
-    padding-right: 20px;
-    justify-content: center;
+    text-align: center;
 }
 
 p {
@@ -84,7 +86,7 @@ p {
 
 .work {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-basis: 60%;
 }
 
@@ -93,7 +95,7 @@ p {
     font-family: var(--font);
     font-size: 250%;
     color: var(--charcoal);
-    flex-basis: 25%;
+    flex-basis: 24%;
     justify-content: center;
     text-align: end;
     border-right: 5px solid;
@@ -103,7 +105,7 @@ p {
 .work-items {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 100%;
+    width: 60%;
     grid-template-areas: "primary primary"
     "p1 p2"
     "p3 p4";
@@ -118,7 +120,7 @@ p {
     background-image: url("../images/BBN.jpg");
     background-position: top center;
     background-size: cover;
-    aspect-ratio: 16/10;
+    aspect-ratio: 4/2;
     grid-area: primary;
 
 }
@@ -131,7 +133,7 @@ p {
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
-    aspect-ratio: 16/10;
+    aspect-ratio: 4/2;
 }
 
 .p1{
@@ -154,33 +156,48 @@ h4 {
     font-family: var(--font);
     color: var(--blue);
     margin: 0;
-    font-size: 300%;
+    font-size: 250%;
     background-color: var(--charcoal);
     padding-right: 25px;
 }
 
 .footer {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+}
+
+.footer-heading {
     flex-basis: 30%;
+    font-family: var(--font);
+    font-size: 250%;
+    color: var(--charcoal);
+    border-right: 5px solid;
+    text-align: center;
 }
 
 .contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     text-decoration: underline;
+    text-align: center;
     font-size: 150%;
     font-family: var(--font);
     color: var(--charcoal);
-    padding-left: 35px;
+    flex-basis: 60%;
+    text-decoration: none;
 }
 
-/*@media screen and (max-width: 992px) {
-    .box {
-    width: 50%;
+.about-me {
+    font-size: 150%;
+    /* font-family: var(--font);
+    color: var(--charcoal); */
+    flex-basis: 60%;
+}
+
+@media screen and (max-width: 499px) {
+    header, main {
+    flex-direction: column;
     } 
 }
 
-@media screen and (max-width: 768px) {
-    .box {
-    width: 100%;
-    }
-    }
